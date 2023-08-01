@@ -1,0 +1,13 @@
+show databases;
+create database shopping;
+show databases;
+use shopping;
+show tables;
+mysql> create table item (itemid int, itemName varchar(50),quantity int,price int, primary key(itemid));
+mysql> insert into item values (0001,'tea',5,70);
+mysql> create table customer (customerid int,customerName varchar(50),itemBought varchar(50),shoppingDate DATE);
+mysql> insert into customer values (1111,'someone','yestestdup','2023-08-01');
+
+select * from item;
+
+select * from customer;

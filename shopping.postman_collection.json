@@ -1,0 +1,253 @@
+{
+	"info": {
+		"_postman_id": "f993c6fb-1a77-40f8-894d-3528500457bc",
+		"name": "shopping",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28878050"
+	},
+	"item": [
+		{
+			"name": "getAllitem",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8765/shopping/item",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"shopping",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addNewItem",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"itemId\": 1212,\r\n    \"itemName\": \"coffee\",\r\n    \"quantity\": 5,\r\n    \"price\": 129\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8765/shopping/item",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"shopping",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateQuantityorPrice",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"itemId\": 1212,\r\n    \"itemName\": \"coffee\",\r\n    \"quantity\": 7,\r\n    \"price\": 129\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8765/shopping/item",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"shopping",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateQuantityorPrice INVALID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"itemId\": 1212,\r\n    \"itemName\": \"coffee\",\r\n    \"quantity\": 7,\r\n    \"price\": 129\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8765/shopping/item",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"shopping",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getItemById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"itemId\": 1212,\r\n    \"itemName\": \"coffee\",\r\n    \"quantity\": 5,\r\n    \"price\": 129\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8765/shopping/item/1001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"shopping",
+						"item",
+						"1001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteItemById",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"itemId\": 1212,\r\n    \"itemName\": \"coffee\",\r\n    \"quantity\": 5,\r\n    \"price\": 129\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8765/shopping/item/1001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"shopping",
+						"item",
+						"1001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllCustomer",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"itemId\": 1212,\r\n    \"itemName\": \"coffee\",\r\n    \"quantity\": 5,\r\n    \"price\": 129\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8765/shopping/item",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"shopping",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addCustomerItemList",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerId\": 1111,\r\n    \"CustomerName\": \"abc\",\r\n    \"ItemName\": [\"tea\",\"coffee\"],\r\n    \"shoppingDate\":\"2023-08-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8765/shopping/item",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8765",
+					"path": [
+						"shopping",
+						"item"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
